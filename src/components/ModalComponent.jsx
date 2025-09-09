@@ -21,7 +21,7 @@ export default function ModalComponent({
   });
 
   return (
-    <dialog className="result-modal" ref={dialog}>
+    <dialog className="result-modal" ref={dialog} onClose={onReset}>
       {userlost ? (
         <h2>You Lost</h2>
       ) : (
